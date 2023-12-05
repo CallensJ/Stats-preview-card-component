@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  width: 375px;
+}
+.card__image {
+  background: url("./images/image-header-mobile.jpg") rgba(170, 92, 219, 0.804);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 245px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.card__content {
+  text-align: center;
+  padding: 2rem;
+}
+.card__content .card__title {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-top: 3rem;
+}
+.card__content .card__title .purple-text {
+  color: hsl(277, 64%, 61%);
+}
+.card__content .card__paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 2.6rem;
+}
+.card__content .stats {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+}
+.card__content .stats .companies,
+.card__content .stats .templates,
+.card__content .stats .queries {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.card__content .stats .heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+  }
+  .card__image {
+    background: url("./images/image-header-desktop.jpg") rgba(170, 92, 219, 0.804);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .card__content {
+    text-align: left;
+    padding: 5rem;
+  }
+  .card__content .card__title {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+  }
+  .card__content .card__title .purple-text {
+    color: hsl(277, 64%, 61%);
+  }
+  .card .stats {
+    flex-direction: row;
+    width: 33rem;
+    height: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
